@@ -1,0 +1,9 @@
+<%- include['partials/header.ejs'] %>
+        <h1>All article page</h1>
+        <% console.log(article2) %>
+        <ul>
+            <% article2.forEach((article) =>{ %>
+                <li><%= article.title %>: <%= article.content %></li>
+            <% }) %>
+        </ul>
+<%- include['partials/footer.ejs'] %>
